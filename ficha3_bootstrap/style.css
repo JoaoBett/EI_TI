@@ -1,7 +1,15 @@
 .sensor{
-
+    background-color: rgba(255, 166, 0, 0.685);
 }
 
 .atuador{
     
+}
+
+.temperatura{
+    background-color: rgba(0, 89, 255, 0.489);
+}
+
+.humidade{
+    background-color: rgba(0, 89, 255, 0.489);
 }
