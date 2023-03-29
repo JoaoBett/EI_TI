@@ -5,3 +5,15 @@
     $ano=2023;
     echo 'Data de hoje =  ' . $dia . '/' . $mes . '/' . $ano;
     ?>
+
+
+
+
+<?php
+        if(isset($_GET['username'])){
+            echo "O username submetido foi: " . $_GET['username'] . "<br>";
+        }
+        if(isset($_GET['password'])){
+            echo "A password submetida foi: " . $_GET['password'] . "<br>";
+        }
+    ?>
