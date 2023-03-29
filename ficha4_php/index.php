@@ -6,13 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PHP_Ficha4</title>
 </head>
-<body>
-    <h1>Olá Mundo!</h1>
-    <?php
-    $dia=29;
-    $mes=03;
-    $ano=2023;
-    echo 'Data de hoje =  ' . $dia . '/' . $mes . '/' . $ano;
-    ?>
+<body>´
+    <div class="container">
+        <div class="row">
+            <form action="">
+                <label for="username">Username: </label><br>
+                <input type="text" id="username" name="username" value=""><br>
+                <label for="password">Password</label><br>
+                <input type="text" id="password" name="passowrd" value=""><br><br>
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+    </div>
 </body>
 </html>

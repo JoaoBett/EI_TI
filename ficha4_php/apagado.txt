@@ -1,0 +1,7 @@
+<h1>Olá Mundo!</h1>
+    <?php
+    $dia=29;
+    $mes=03;
+    $ano=2023;
+    echo 'Data de hoje =  ' . $dia . '/' . $mes . '/' . $ano;
+    ?>
