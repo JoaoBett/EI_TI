@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PHP_Ficha4</title>
 </head>
-<body>´
+<body>
+    <img src="https://ead.ipleiria.pt/2022-23/pluginfile.php/166632/question/questiontext/693297/7/4353030/estg_h.png" alt="IPLeiria">
     <div class="container">
         <div class="row">
             <form action="">
