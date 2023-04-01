@@ -15,13 +15,15 @@
 
         password_hash("a_password_que_quiser_utilizar_mas_nao_utilize_passwords_ja_utilizadas_por_si_noutros_sistemas",PASSWORD_DEFAULT);
         $password_hash='valor_copiado_do_exercicio_anterior';
-        
+        /*
         if (password_verify ($_POST['password'], $password_hash)) {
 
             echo "Password correta!";
         
         }
-
+        */
+        header("Location: dashboard.php");
+        exit;
     ?>
     <div class="container">
         <div class="row align-items-center" >
@@ -34,6 +36,10 @@
                 <input type="submit" value="Submit">
             </form>
         </div>
+    </div>
+
+    <div>
+        <a href="dashboard.php" target="_blank">Dashboard</a>
     </div>
 </body>
 </html>
