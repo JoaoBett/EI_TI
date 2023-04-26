@@ -9,10 +9,10 @@ while(!Serial);
 char SSID[] = "labs";
 char PASS_WIFI[] = "robot1cA!ESTG";
 WiFi.begin(SSID,PASS_WIFI);
-WiFi.status();
+int wifi = WiFi.status();
 
-while(Wifi.status()!=1){
-  Serial.println(.);
+while(wifi!=1){
+  Serial.println('.');
   delay(500);
 }
 
@@ -22,10 +22,29 @@ WiFi.subnetMask(); //A mascara de rede
 WiFi.gatewayIP(); //O endereço de Ip do default gateway
 WiFi.RSSI(); //potencia do sinal
 
+//---------------------------------
+
+char URL[] = "iot.dei.estg.ipleiria.pt";
+
+int PORTO = 80;
+
+WiFiClient clienteWifi;
+
+HttpClient clienteHTTP = HttpClient(clienteWifi, URL, PORTO);
+
+char responseBody[];
+
+
 }
 
 void loop() {
   // put your main code here, to run repeatedly:
+clienteHTTP.get("/api/api.php?sensor=temp");
+
+responseBody = clienteHTTP.responseBody();
+
+Serial.println("%s",responseBody);
+delay(5000);
 
 
 }

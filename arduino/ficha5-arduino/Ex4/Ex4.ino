@@ -9,10 +9,10 @@ while(!Serial);
 char SSID[] = "labs";
 char PASS_WIFI[] = "robot1cA!ESTG";
 WiFi.begin(SSID,PASS_WIFI);
-WiFi.status();
+int wifi = WiFi.status();
 
-while(Wifi.status()!=1){
-  Serial.println(.);
+while(wifi!=1){
+  Serial.println('.');
   delay(500);
 }
 
