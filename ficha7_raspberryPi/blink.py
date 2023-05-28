@@ -6,7 +6,6 @@ except RuntimeError:
     print("Error importing RPI.GIO! You need to use 'sudo' to run the program.")
 
 GPIO.setmode(GPIO.BCM)
-
 out_channel = GPIO.setup(2, GPIO.OUT)
 
 while True:
