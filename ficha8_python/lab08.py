@@ -5,7 +5,7 @@ import datetime
 def post2API(nome, valor):
     #o pedido HTTP é sempre realizado para a API do seu grupo
     now = datetime.datetime.now()
-    r = requests.post('http://iot.dei.estg.ipleiria.pt/ti/g123/api/api.php', data=payload)
+    r = requests.post('http://127.0.0.1/EI_TI/projeto/TI-ProjFase1/api/api.php', data=payload)
     if r.status_code != 200:
         print("Erro " + r.text)
     
@@ -23,19 +23,19 @@ out_channel = GPIO.setup(2, GPIO.OUT)
 print ("Prima CTRL+C para terminar.\n")
 while True:
     try:
-        r = requests.get("http://iot.dei.estg.ipleiria.pt/api/api.php?sensor=btc", auth=('user','pass')) #Phase 1 project - to get the temperature
+        r = requests.get("http://127.0.0.1/EI_TI/projeto/TI-ProjFase1/api/api.php?sensor=alarme", auth=('user','pass')) #Phase 1 project - to get the temperature
         
         if r.status_code == 200:
             print(r.text)
             if r.text > 20:
                 print("Vou ligar o LED do RPI")
                 GPIO.output(out_channel,GPIO.HIGH)
-                payload = {'nome': 'led',
+                payload = {'nome': 'alarme',
                            'valor': '1',
                            'hora':now}
                 now = datetime.datetime.now()
                 print(now.strftime("%H:%M:%S"))
-                r = requests.post('http://iot.dei.estg.ipleiria.pt/ti/g123/api/api.php', data=payload) #g123 is the number of the group which i don't know
+                r = requests.post('http://127.0.0.1/EI_TI/projeto/TI-ProjFase1/api/api.php', data=payload) #g123 is the number of the group which i don't know
                 if r.status_code != 200:
                     print("Erro " + r.text)
             else:

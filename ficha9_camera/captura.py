@@ -1,13 +1,10 @@
 import cv2
 import requests
 
-# URL da webcam
-webcam_url = "https://rooftop.tryfail.net:50000/image.jpeg"
-
-cap = cv2.VideoCapture(webcam_url)
+cap = cv2.VideoCapture(0)
 ret, frame = cap.read()
+
 if ret:
-  # escreve na mesma diretoria do script python o ficheiro webcam.jpg
   cv2.imwrite('captura.jpg', frame)
 cap.release()
 
