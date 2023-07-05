@@ -1,0 +1,76 @@
+###Comunicação PHP###
+
+-Cliente faz pedido HTTP
+
+
+###Variáveis###
+
+$_GET -> devolve um array de dados que são enviados pelo URL
+            -visiveis na barra de endereço
+            -Não deve ser utilizado para enviar passwords ou informações sensiveis
+            -max de 2000 caracteres
+
+GET -> é normalmente utilizado para obter dados do servidor
+POST -> é utilizado para enviar dados para o servidor e obter a resposta uma confirmação
+
+
+$_POST -> devolve um array de dados que sao enviados no protocolo HTTP
+
+
+$_SESSION -> guardar informaçoes em variáveis
+A sessão é uma variável global guardada no servidor.
+
+
+As cookies ficam guardadas em ficheiros temporários no sistema operativo do cliente.
+
+###Comunicação###
+
+Modelo OSI
+
+1-Descreve os meios mecanicos eletricos e funcionais para ativar, manter ou desativar as conexões fisicas para ativar/manter ou desativar as conexões - fisico
+2-Descrever metodos para troca de frames de dados entre dispositivos - Data link
+3-Trocar pacotes pela rede -Network
+4-Segmentar, transferir e juntar os dados - Transport
+5-Organizar e controlar a comunicação  - Session
+6-Representação comum de dados recebidos entre as camadas - Presentation
+7-Conectividade entre individuos - Application
+
+
+Create -> Post
+Read   -> Get
+Update -> Put
+Delete -> Delete
+
+
+HTTP Status Code
+200:
+200 -> OK
+201 -> Created
+203 -> Non-Authoritative
+204 -> No Content 
+
+400:
+400 -> Bad Request
+401 -> Unauthorized
+403 -> Forbidden
+404 -> Not Found
+409 -> Conflict
+
+500:
+500 -> Internal Server Error
+501 -> Not implemented
+502 -> Bad Gateway
+503 -> Service Unavailable
+504 -> Gateway Timeout
+599 -> Network Timeout
+
+
+
+URL -> Uniform Resource Locator
+
+DNS -> Domain Name System
+
+TLD -> Top Level Domains 
+
+
+
