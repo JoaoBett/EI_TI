@@ -1,0 +1,72 @@
+Cibersegurança -> Proteção contra ações maliciosas e acesso não autorizado
+
+
+PII -> Personally Identifiable Information
+
+SPI -> Sensitive Personal Information
+
+White hat -> Etico
+          -> Com permissão
+          -> Segurança/Etico/Autorizado
+
+Grey hat -> Curiosidade/desafio
+         -> Crime na mesma
+         -> Dinheiro/Crime
+
+Black hat -> Criminosos
+          -> Lucro
+          -> Dinheiro/Terrorismo
+
+###3 Pilares SUPER IMPORTANTES###
+
+Confidencialidade       Integridadde        Disponibilidade
+                            =
+Privacidade             Informaçao          Acessivel
+                        Fidedigna
+
+Método para:
+Confidencialidade -> Cifragem/Autenticação/Autorização/Accounting(AAA)
+
+Protocolo AAA ->Algo que tu sabes
+              ->Algo que tu tens
+              ->Algo que tu és
+
+Integridade -> Hashing
+
+Disponibilidade -> DoS(Denial-of-Service)
+                -> Eliminar pontos único de falha
+                -> Detetar falhas e recuperação automatica
+                -> Soluções alternativas ou redundância
+
+###Malware###
+
+Virus -> Código executavel malicioso que pode estar incluido num programa legitimo
+      -> Precisa da ação do utilizador para ativar e propagar
+
+
+Worms -> Código malicioso que se multiplica explorando vulnerabilidades
+      -> Executa-se a si próprio
+
+Trojan Horse -> Carrega código malicioso mas disfarçado
+             -> Precisa de ações do utilizador
+
+Logic Bomb -> Programa malicioso mas adormecido
+           -> "Acorda" com a execução de um programa ou um horario especifico
+
+Ramsonware -> Pede resgate monetário para libertar os dados
+           -> Cifragem de dados com chave desconhecida
+
+Backdoors -> Permite acessos remotos de utilizadores não autorizados
+          -> Permite o criminoso voltar
+
+Rootkit -> Altera ficheiros para se esconder
+
+Spam -> método de publicidade
+
+Spyware -> recolher informaçoes
+
+Adware -> massacrar o utilizador com publicidade
+
+Scareware -> realizar determinadas ações com base no medo
+
+Pishing -> Fraude
