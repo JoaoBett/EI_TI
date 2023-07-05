@@ -1,6 +1,6 @@
 Desvantagens de IoT:
 
--Empresas de wearables têm muita informação pessoal sobre os seus utilizadore
+-Empresas de wearables têm muita informação pessoal sobre os seus utilizadores
 -Lojas categorizam tipos de consumidores
 -"Spam" personalizado
 -Falha de rede é um problema
@@ -199,6 +199,3 @@ LAN -> MAN -> WAN
 
 ->Local Gateaway
     ->Sensores
-
-->Fog/Edge
-    ->
