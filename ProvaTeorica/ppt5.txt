@@ -1,0 +1,204 @@
+Desvantagens de IoT:
+
+-Empresas de wearables têm muita informação pessoal sobre os seus utilizadore
+-Lojas categorizam tipos de consumidores
+-"Spam" personalizado
+-Falha de rede é um problema
+-Máquinas a substituir humanos
+
+Sensores:
+->Equipamento para medir uma propriedade fisica
+->Circuitos analogicos ou digitais
+
+Atuadores:
+->Equipamento que interage com o meio fisico
+->Podem ser divididos nas seguintes areas:
+    ->Elétrico->sinais elétricos para operações mecanicas
+    ->Hidráulico->pressão de fluidos
+    ->Pneumatico->ar comprimido
+
+Sistema de Controlo:
+->Open-Loop
+    ->Não utilizam feedback loop -> não verifica o resultado
+
+
+->Close-Loop
+    ->Utiliza feedback para determinar -> verifica o resultado 
+
+->Feedback Loop
+    ->Feedback negativo
+        ->Age contra as ações anteriores
+
+    ->Feedback positivo
+        ->Reforça as ações anteriores
+
+
+###Redes###
+PAN -> Personal Area Network
+->Short Distance
+->Low powered
+->Wireless ou wired
+    ->Auriculares bluetooth
+
+LAN -> Local Area Network
+->Smal geographic Area
+->Wireless ou wired
+    ->Rede Doméstica
+
+WAN -> Wide Area Network
+->Wide geographic Area
+->Wireless ou wired
+->Redes Operadores ISP
+
+MAN->Metropolitan Area Network
+->Poucos kms
+->Publicas/Privadas
+->Smart city
+
+
+Area Geografica:
+Maior   --------->  Menor
+
+WAN -> MAN -> LAN -> PAN
+
+
+Velocidade:
+Maior   --------->  Menor
+LAN -> MAN -> WAN
+
+##W(PAN)###
+
+->RFID (Radio Frequency Identification)
+    ->P2P
+    ->Low cost/Low Power
+    ->Passive RFID
+        ->Curto alcance(centimetros/poucos metros)
+    ->Active RFID
+        ->Maior alcance(até dezenas de metros ou menor que 100)
+    ->Frequencia 125KHZ até 860 MHz
+    
+->NFC(Near-field communication)
+    ->Alcance até 10cm
+    ->Frequencia 13.56MHz
+
+->Bluetooth
+    ->802.15
+    ->Low cost/Low Power
+    ->Frequencia 2.4GHz
+    ->Alcance até 100 metros
+    ->Versoes:
+        ->Bluetooth 1.1
+        ->Bluetooth 1.2
+        ->Bluetooth 2.0
+        ->Bluetooth 3.0
+        ->Bluetooth Atuais
+            ->Bluetooth 4.0 ->Bluetooth low energy 
+            ->Bluetooth 4.2
+            ->Bluetooth 5.0
+            ->Bluetooth 5.4
+
+->Zigbee 
+    ->802.15
+    ->Zigbee Alliance
+    ->Versoes:
+        ->Zigbee 1.0
+        ->Zigbee IP
+        ->Zigbee Pro
+        ->Versao atual:
+            ->Zigbee 3.0
+    ->Baixo consumo
+    ->Baixo custo
+    ->Escalabilidade
+    ->Interoperabilidade
+    ->Frequencia 868MHz 915 MHz(America) 2.4-2.484GHz(Global)
+
+
+###W(LAN)###
+
+->Ethernet
+    ->802.3
+    ->Alcances 55m a 100m(Cobre) 70-80km(fibra)
+    ->MAC Adress (Media acess Control Adress)
+    ->Endereço fisico é fixo (MAC Adress)
+    ->Endereço lógico é dinamico (Gestor de rede)
+        ->Network portion -> identifica rede local
+        ->Host Adress -> equipamentos individualmente
+    
+    ->HUB
+        ->Já não é usado
+        ->Pouco eficientes
+        ->Replica a mensagem enviada por 1 dispositivo para todos 
+        ->Apenas uma mensagem de cada vez
+        ->Não sabe quem enviou e quem recebeu
+    
+    ->Switch
+        ->Tabela de endereçamento MAC
+            ->Correspondente endereço MAC por porta
+        ->Várias comunicações ao mesmo tempo
+
+    ->POE (Power Over Ethernet)
+        ->Simplicidade de instalação
+        ->Redução de custo
+        ->Flexibilidade na escolha do local
+
+->Wi-Fi
+    ->IEE 802.11
+    ->Frequencia:
+        ->2.4GHz
+        ->5GHz
+        ->Novos:
+        ->6GHz
+        ->868MHZ    
+
+
+###MAN WAN###
+
+->Celular
+    ->Grandes Distancias
+    ->Muito caro
+    ->Frequencia: 450 800 900 1800 2100 2600 MHz
+    ->Frequencia(Novas 5G): 700 3600 24000 39000 47000 MHz
+
+    ->4G
+        ->Velocidade 5 -50 mbs
+
+    ->5G
+        ->Velocidade média: 1 a 3GB | 100 a 400Mbps
+
+###Low power Wide Area network###
+
+->LPWAN (Low power wide area network)
+    ->Low power
+    ->Low cost
+    ->Low Bit rate até 50-100Kbps
+    ->High range alguns kms
+
+->LoRaWan
+    ->Frequencia Europa 868 | America 920 MHZ
+    ->290bps 50kbps
+    ->Low power
+    ->Long range 2 a 5km(urbanas) | 15km em rurais
+    ->Low cost
+
+
+->Wi-Fi Hallow ->802.11ah
+    ->baixo consumo energetico 
+    ->longas distancias
+    ->Frequencia 868MHz
+
+->NarrowBand IoT(NB-IoT)
+    ->Low power
+    ->Alcance 10 a 15km
+    ->Velocidade 
+        ->250 kbps (downlink)
+        ->20 kbps (uplink)
+
+###Arquiteturas###
+->Device to devide
+    ->Bluetooth/zigbee
+
+->Local Gateaway
+    ->Sensores
+
+->Fog/Edge
+    ->
