@@ -1,0 +1,27 @@
+Modelo TCP/IP:
+
+Aplication Layer Protocol
+->HTTP->HyperText Transfer Protocol
+->DNS/HTTP/DHCP/FTP
+
+Transport Layer Protocol
+->TCP->Transmission Control Protocol
+->TCP/UDP
+
+Internet Layer Protocol
+->IP->Internet Protocol
+->IPv4/IPv6/ICMPv4/ICMPv6
+
+Network Acess Layer
+->Tipo de media usado(cabo,sem fios...)
+->Ethernet/WLAN/SONET/SDH
+
+###Encapsulamento###
+
+->Geração de dados em que cada protocolo vai encapsulando os dados e acrescentando inoformação especifica desse protocolo
+->PDU->Protocol Data Units
+
+Aplication layer->interação entre o utilizador e os dados
+TCP->Divide a mensagem em segmentos e numera-os
+Internet Layer->troca de informaçoes entre equipamentos de diferentes redes
+Network Layer->prepara os dados para enviar num determinado tipo de media
